@@ -1,0 +1,47 @@
+@import "style-nucleo-outline";
+@import "./style-variables";
+@import "./assets//fonts//ghotam_a";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./theme.scss";
+
+$a-transaction-time: 300ms;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Gotham A","Gotham B","Gotham",Arial,Helvetica,sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  position: relative;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: $c-main-dark;
+  font-size: 16px;
+  font-family: sans-serif;
+
+  ul li {
+    font-size: $font-size-list;
+    list-style-type: none;
+  }
+
+  a {
+    transition:
+            background-color $a-transaction-time,
+            border-color $a-transaction-time,
+            color $a-transaction-time;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.ais-SearchBox { margin-bottom: 1em }
