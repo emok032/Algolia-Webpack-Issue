@@ -11,8 +11,10 @@ module.exports = {
   externals: [nodeExternals({
     whitelist: [
       /^ngx-page-scroll/,
+      /^instantsearch.js/,
+      /^angular-instantsearch/,
       /^ngx-bootstrap/
-    ] 
+    ]
   })],
   resolve: { extensions: ['.ts', '.js'] },
   optimization: {
