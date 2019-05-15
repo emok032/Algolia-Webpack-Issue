@@ -1,0 +1,35 @@
+{
+  "name": "garp-website-v2",
+  "scripts": {
+  },
+  "env": {
+    "MONGODB_URI": {
+      "required": true
+    },
+    "REDIS_URL": {
+      "required": true
+    },
+    "NODE_ENV": {
+      "required": true
+    },
+    "MODE_ENV": {
+      "required": true,
+      "description": "Defines if the webserver should run in local 'development' or 'production' mode.",
+      "value": "production"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "mongolab",
+    "heroku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
